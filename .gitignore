@@ -1,7 +1,11 @@
+/build
+
 # VSCode
 .vscode
-a.out
 
+gradle_code.iml
+
+.idea
 
 # built application files
 *.apk
@@ -50,4 +54,9 @@ flowlayout-lib/src/main/res/drawable/
 qrscanner/src/main/res/drawable/
 speedup/
 
-src/main/res/drawable/
+app
+app/.gitignore
+app/build.gradle
+app/libs/
+app/proguard-rules.pro
+app/src/
