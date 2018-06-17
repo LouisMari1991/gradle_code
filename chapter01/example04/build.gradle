@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+// gradle -i printLog 输出 INFO 级别之上的日志信息
+// gradle -q printLog 输出 QUIET 级别之上的日志信息
+
+task printLog << {
+    println '输出一段日志'
+
+    // 调用 Project 的 getLogger() 方法获取的 Logger 对象的实例
+    logger.quiet 'quiet日志信息'
+    logger.error 'error日志信息'
+    logger.warn 'warn日志信息'
+    logger.lifecycle 'lifecycle日志信息'
+    logger.info 'info日志信息'
+    logger.debug 'debug日志信息'
+}

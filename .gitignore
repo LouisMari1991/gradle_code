@@ -40,10 +40,8 @@ proguard/
 *.iws
 /.idea
 #gradle.properties
-gradle-wrapper.properties
 /captures
 /projectFilesBackup
-gradlew
 BuglyUploadLog.txt
 
 

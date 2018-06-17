@@ -1,5 +1,6 @@
 task hello{
     doLast{
+        // 在 Groovy 中,方法的调用可以省略签名中的括号,以一个空格分开即可
         println 'Hello World!'
     }
 }
