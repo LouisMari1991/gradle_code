@@ -1,4 +1,31 @@
 rootProject.name = 'gradle_code'
 
+//第一章项目例子定义
 include ':example02'
 project(':example02').projectDir = new File(rootDir, 'chapter01/example02')
+include ':example03'
+project(':example03').projectDir = new File(rootDir, 'chapter01/example03')
+include ':example04'
+project(':example04').projectDir = new File(rootDir, 'chapter01/example04')
+
+//第二章项目例子定义
+include ':example21'
+project(':example21').projectDir = new File(rootDir, 'chapter02/example21')
+include ':example22'
+project(':example22').projectDir = new File(rootDir, 'chapter02/example22')
+include ':example23'
+project(':example23').projectDir = new File(rootDir, 'chapter02/example23')
+include ':example24'
+project(':example24').projectDir = new File(rootDir, 'chapter02/example24')
+include ':example25'
+project(':example25').projectDir = new File(rootDir, 'chapter02/example25')
+
+//第三章项目例子定义
+include ':example34'
+project(':example34').projectDir = new File(rootDir, 'chapter03/example34')
+include ':example35'
+project(':example35').projectDir = new File(rootDir, 'chapter03/example35')
+include ':example36'
+project(':example36').projectDir = new File(rootDir, 'chapter03/example36')
+include ':example37'
+project(':example37').projectDir = new File(rootDir, 'chapter03/example37')

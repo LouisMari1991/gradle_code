@@ -1,0 +1,12 @@
+task ex36Hello << {
+    println 'doLast1'
+}
+
+ex36Hello.doFirst {
+    println 'doFirst'
+}
+
+ex36Hello.doLast {
+    println project.hasProperty('ex36Hello')
+    println 'doLast2'
+}
