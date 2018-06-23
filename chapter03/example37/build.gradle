@@ -30,4 +30,15 @@ task ex37CustomProperty << {
     sourceSets.each {
         println "${it.name}的resourcesDir是：${it.resourcesDir}"
     }
+
+    def buildTime = buildTime()
+
+    println "buildTime = ${buildTime}"
+
+}
+
+def buildTime() {
+    def date = new Date()
+    def formatTime = date.format('yyyy:MM:dd')
+    formatTime
 }
