@@ -1,0 +1,40 @@
+task ex46orderTask1 << {
+    println 'ex46orderTask1'
+}
+
+task ex46orderTask2 << {
+    println 'ex46orderTask2'
+}
+
+//ex46orderTask1.mustRunAfter ex46orderTask2
+ex46orderTask1.shouldRunAfter ex46orderTask2
+
+task ex46OrderTask3 dependsOn(ex46orderTask1, ex46orderTask2) {
+
+    println 'ex46OrderTask3'
+}
+
+/**
+ * 1 + 1 = 2
+ * ex46OrderTask4 run
+ * :example46:ex46OrderTask4
+ * ex46OrderTask4 in doFirst
+ * ex46OrderTask4 in doLast
+ */
+task ex46OrderTask4 {
+
+    println "1 + 1 = ${1 + 1}"
+
+    doLast {
+        println 'ex46OrderTask4 in doLast'
+    }
+
+    doFirst {
+        println 'ex46OrderTask4 in doFirst'
+    }
+
+    println 'ex46OrderTask4 run'
+
+}
+
+

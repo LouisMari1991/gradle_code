@@ -33,12 +33,16 @@ task ex37CustomProperty << {
 
     def buildTime = buildTime()
 
-    println "buildTime = ${buildTime}"
+    def time = buildTime['time']
 
+    println "buildTime = ${buildTime}, time = ${time}"
 }
 
 def buildTime() {
+    def map = new HashMap()
     def date = new Date()
     def formatTime = date.format('yyyy:MM:dd')
-    formatTime
+    map.put('time', formatTime)
+    map
 }
+

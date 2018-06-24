@@ -21,6 +21,6 @@ task printMap << {
     println map.height
 
     map.each {
-        println "Key:${it.key}, Value:${it.va}"
+        println "Key:${it.key}, Value:${it.value}"
     }
 }

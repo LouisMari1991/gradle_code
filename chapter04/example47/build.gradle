@@ -1,0 +1,5 @@
+task ex47DisenabledTask {
+    println 'ex47DisenabledTask run'
+}
+
+ex47DisenabledTask.enabled = false

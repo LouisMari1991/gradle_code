@@ -1,0 +1,27 @@
+def task = task ex45CustomTask(type: CustomTask)
+
+task.doFirst {
+    println 'Task 执行之前执行 in doFirst'
+}
+
+task.doLast {
+    println 'Task 执行之后执行 in doLast1'
+}
+
+task.doLast {
+    println 'Task 执行之后执行 in doLast2'
+}
+
+class CustomTask extends DefaultTask {
+
+    @TaskAction
+    def doSelf() {
+        println 'Task自己本身在执行 in doSelf'
+    }
+
+    @TaskAction
+    def doSelf1(){
+        println 'Task自己本身在执行 in doSelf1'
+    }
+
+}
