@@ -47,3 +47,9 @@ include ':example48'
 project(':example48').projectDir = new File(rootDir, 'chapter04/example48')
 include ':example49'
 project(':example49').projectDir = new File(rootDir, 'chapter04/example49')
+
+//第五章项目例子自定义
+include ':example52'
+project(':example52').projectDir = new File(rootDir, 'chapter05/example52')
+include ':example53'
+project(':example53').projectDir = new File(rootDir, 'chapter05/example53')
