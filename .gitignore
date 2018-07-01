@@ -58,3 +58,6 @@ app/build.gradle
 app/libs/
 app/proguard-rules.pro
 app/src/
+chapter05/example53/src/main/res/drawable/
+libs/
+src/main/res/drawable/
